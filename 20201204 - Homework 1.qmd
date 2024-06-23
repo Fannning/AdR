@@ -1,0 +1,31 @@
+---
+title: "Homework 1"
+format: html
+editor: visual
+execute:
+  echo: false
+---
+
+## Data cars
+
+The data *cars* from R package <span style="color: blue;">datasets</span> gives the ***speed of cars (mph)*** and the ***distances taken to stop (ft)***. All 50 observations were recorded in the 1920s.
+
+```{r load package}
+library(datasets)
+data("cars")
+```
+
+Here’s the first 5 observations.
+
+```{r show the data}
+head(cars)
+```
+
+## Plot
+
+```{r plot}
+#plot the data, x for speed, y for distance
+plot(cars$speed,cars$dist, xlab = "Speed of Cars (mph)", ylab = "Distances Taken to Stop (ft)")
+```
+
+From the plot, it’s clear that when the car going ***faster***, it tends to take ***longer*** distance to stop.
