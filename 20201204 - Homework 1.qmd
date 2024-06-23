@@ -8,14 +8,14 @@ execute:
 
 ## Data cars
 
-The data *cars* from R package <span style="color: blue;">datasets</span> gives the ***speed of cars (mph)*** and the ***distances taken to stop (ft)***. All 50 observations were recorded in the 1920s.
+The data *cars* from R package `datasets` gives the ***speed of cars (mph)*** and the ***distances taken to stop (ft)***. All 50 observations were recorded in the 1920s.
 
 ```{r load package}
 library(datasets)
 data("cars")
 ```
 
-Here’s the first 5 observations.
+Here's the first 5 observations.
 
 ```{r show the data}
 head(cars)
@@ -25,7 +25,7 @@ head(cars)
 
 ```{r plot}
 #plot the data, x for speed, y for distance
-plot(cars$speed,cars$dist, xlab = "Speed of Cars (mph)", ylab = "Distances Taken to Stop (ft)")
+plot(cars$speed,cars$dist, xlab = "Speed of Cars (mph)", ylab = "Distances Taken to Stop (ft)",main = "distances taken to stop for different car speeds")
 ```
 
-From the plot, it’s clear that when the car going ***faster***, it tends to take ***longer*** distance to stop.
+From the plot, it's clear that when the car going ***faster***, it tends to take ***longer*** distance to stop.
